@@ -9,7 +9,7 @@ document.getElementById('btn-daily').addEventListener('click', function () {
           + '&longitude=' + longitude
           + '&timezone=America/New_York'
           + '&daily=temperature_2m_max,temperature_2m_min,precipitation_sum'
-          + '&forecast_days=16';
+          + '&forecast_days=15';
 
   fetch(url)
     .then(function (res) { return res.json(); })
@@ -114,4 +114,5 @@ document.getElementById('btn-historical').addEventListener('click', function () 
 });
 
 // Show daily wi
+
 document.getElementById('btn-daily').click();
